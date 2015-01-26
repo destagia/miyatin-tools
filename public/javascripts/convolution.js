@@ -1,4 +1,4 @@
-var endpoint = 'http://localhost:9000/';
+var endpoint = 'http://miyatin.pw/';
 var data = {
     x:{
         size:1
