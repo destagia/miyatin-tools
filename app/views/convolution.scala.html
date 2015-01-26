@@ -1,0 +1,26 @@
+@main("畳み込み演算 計算機 Convolution Calculator"){
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/convolution.css")">
+    <script src="@routes.Assets.at("javascripts/convolution.js")" type="text/javascript"></script>    
+    <h3>畳み込み演算計算機</h3>
+    <p>離散の値に対して，畳み込み演算を計算します。非周期信号にのみ対応なう。</p>
+    <table> 
+    <tbody>
+        <tr id="x_row">
+            <th>x[n]</th>
+            <td><button id="rm_x">-</button></td>
+            <td><button id="add_x">+</button></td>
+            <td><input id="x_0" type="text"></td>
+        </tr>
+        <tr id="y_row">
+            <th>y[n]</th>
+            <td><button id="rm_y">-</button></td>
+            <td><button id="add_y">+</button></td>
+            <td><input id="y_0" type="text"></td>
+        </tr>
+    </tbody>
+    </table>
+    <button id="calc">畳み込む</button>
+    <p id="answer"></p>
+
+    
+}
