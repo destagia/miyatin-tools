@@ -1,7 +1,10 @@
 logs
 project/project
 project/target
-target
+/target/*
+!target/universal
+/target/universal/*
+!target/universal/stage
 tmp
 .history
 dist
@@ -13,3 +16,7 @@ dist
 /.project
 /RUNNING_PID
 /.settings
+/.ensime
+/.ensime_lucene
+/*.sublime-project
+/*.sublime-workspace
