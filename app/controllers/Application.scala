@@ -23,10 +23,11 @@ object Application extends Controller {
   def convolutionCalc(xn:String, yn:String) = Action {
     val x = xn.split(',').map(_.toFloat).toList
     val y = yn.split(',').map(_.toFloat).toList
-
+    val z = Tools.foldCalc(x,y)
     println(x)
     println(y)
-    Ok(Json.toJson(Tools.foldCalc(x,y)))
+    println(z)
+    Ok(Json.toJson(z))
   }
 
 }

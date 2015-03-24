@@ -88,7 +88,7 @@ object Tools {
         def makeList(x:List[Float], h:List[Float], res:List[Float]):List[Float] = {
             def calc (x0:List[Float], h0:List[Float], res1:Float):Float = {
                 if (x0.isEmpty || h0.isEmpty) res1
-                else calc (x0.tail, h0.tail, (res1 + (x0.head * h0.head)).toShort)
+                else calc (x0.tail, h0.tail, res1 + (x0.head * h0.head))
             }
 
             if (x.isEmpty || h.isEmpty) res
