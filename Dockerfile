@@ -5,7 +5,7 @@ MAINTAINER Shohei Miyashita <kei@kamasu.jp>
 ADD ./ /root
 
 # run play
-EXPOSE 40002
+EXPOSE 80
 WORKDIR /root
 
 CMD ./target/universal/stage/bin/miyatintools -Dhttp.port=80 -J-Xms128M -J-Xmx512m -J-server
