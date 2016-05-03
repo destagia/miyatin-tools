@@ -1,4 +1,0 @@
-miyatintools:
-  build: .
-  ports:
-    - "40002:80"
