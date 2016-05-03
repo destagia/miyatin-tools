@@ -1,4 +1,4 @@
-var endpoint = 'http://miyatin.pw/';
+var endpoint = '/';
 var data = {
     x:{
         size:1
